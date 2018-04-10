@@ -521,22 +521,7 @@ udpPort.on("ready", function () {
 }
 ```
 
-#### Connecting to the serial port and listening for OSC messages
-```javascript
-// Instantiate a new OSC Serial Port.
-var serialPort = new osc.SerialPort({
-    devicePath: "/dev/cu.usbmodem22131",
-    metadata: true
-});
 
-// Listen for the message event and map the OSC message to the synth.
-serialPort.on("message", function (oscMsg) {
-    console.log("An OSC message was received!", oscMsg);
-});
-
-// Open the port.
-serialPort.open();
-```
 
 ### UDP in a Chrome App
 
